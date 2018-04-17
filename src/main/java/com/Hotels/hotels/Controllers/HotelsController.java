@@ -22,18 +22,12 @@ public class HotelsController {
             Model model) {
 
         // handling the request params
-
-        try {
-            destinationName = !destinationName.isEmpty() ? "&destinationName=" + destinationName : "";
-            lengthOfStay = !lengthOfStay.isEmpty() ? "&lengthOfStay=" + lengthOfStay : "";
-            minTripStartDate = !minTripStartDate.isEmpty() ? "&minTripStartDate=" + minTripStartDate : "";
-            maxTripStartDate = !maxTripStartDate.isEmpty() ? "&maxTripStartDate=" + maxTripStartDate : "";
-        } catch (Exception e) {
-            destinationName = "";
-            lengthOfStay = "";
-            minTripStartDate = "";
-            maxTripStartDate = "";
-        }
+ 
+           destinationName = destinationName!=null && !destinationName.isEmpty() ? "&destinationName=" + destinationName : "";
+           lengthOfStay = lengthOfStay!=null && !lengthOfStay.isEmpty() ? "&lengthOfStay=" + lengthOfStay : "";
+           minTripStartDate = minTripStartDate!=null && !minTripStartDate.isEmpty() ? "&minTripStartDate=" + minTripStartDate : "";
+           maxTripStartDate = maxTripStartDate!=null && !maxTripStartDate.isEmpty() ? "&maxTripStartDate=" + maxTripStartDate : "";
+        
 
 
         /*
