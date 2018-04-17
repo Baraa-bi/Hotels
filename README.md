@@ -13,7 +13,7 @@ https://offersvc.expedia.com/offers/v2/getOffers?scenario=deal-finder&page=foo&u
 
 ## https://barabilal.herokuapp.com/hotels
 
-### you can choose destination name , length of stay , min and max trip start date 
+### you can chose destination name , length of stay , min and max trip start date 
 
 ### to run this app localy simply clone this repo and open it with intelij Idea or any IDE you wish
 
